@@ -7,4 +7,8 @@ class Node<T> {
     init(value: T) {
         self.value = value
     }
+    
+    func add(child: Node) {
+        children.append(child)
+    }
 }
