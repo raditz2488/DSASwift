@@ -13,3 +13,15 @@ example(of: "creating a node") {
     node2.left = node1
     node2.right = node3
 }
+
+example(of: "inserting values in BST") {
+    var bst = BST<Int>()
+    
+    bst.insert(value: 2)
+    bst.insert(value: 3)
+    bst.insert(value: 1)
+    
+    assert(bst.root!.value == 2)
+    assert(bst.root!.left!.value == 1)
+    assert(bst.root!.right!.value == 3)
+}
