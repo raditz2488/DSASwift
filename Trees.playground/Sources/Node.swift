@@ -1,14 +1,14 @@
 import Foundation
 
-class Node<T> {
+public class Node<T> {
     let value: T
     var children: [Node] = []
     
-    init(value: T) {
+    public init(value: T) {
         self.value = value
     }
     
-    func add(child: Node) {
+    public func add(child: Node) {
         children.append(child)
     }
 }
